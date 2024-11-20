@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background-color: #fae7dc;
+}
+
+#page-container {
+    position: relative;
+    z-index: 1;
+}
+
+#background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Styles for the video container */
+#background-overlay video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* Styles for the main paragraph container */
+.main-paragraph-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow effect */
+}
+
+.main-paragraph-container p {
+    margin: 0; /* Remove default margin from the paragraph */
+}
+/* Styles for the centered heading */
+.centered-heading {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    text-align: center;
+    font-size: 53px;
+    color: #fceea4;
+    font-weight: bold;
+    font-family: 'Book Antiqua', serif;
+}
+/* Title for the other pages*/
+.title{
+    font-size: 53px;
+    color: #ba7966;
+    font-weight: bold;
+    text-shadow: black;
+    font-family: 'Book Antiqua', serif;
+    text-align: center;
+}
+/* Title for the other pages*/
+.blog-title{
+    font-size: 25px;
+    color: #ba7966;
+    font-weight: bold;
+    font-family: 'Book Antiqua', serif;
+    text-align: center;
+}
+.ProjImg{
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.portfolioDiv{
+    text-align: center;
+}
+
+/* Styles for the second navbar */
+.navbar.fixed-bottom {
+    z-index: 1000;
+}
+
+/* Footer css stuff */
+#footer a{
+    text-align: right;
+}
+
+.container {
+    padding-bottom: 40px; /* Adjust the value based on the navbar height */
+}
