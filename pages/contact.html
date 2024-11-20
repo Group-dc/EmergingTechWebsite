@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Noelle Dacayo & Manu Sugunakumar">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Contact</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="content/app.css">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><i class="fa-solid fa-people-roof"></i> Harmony Hub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="NavBar" class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html"><i class="fa-solid fa-scroll"></i> Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html"><i class="fa-regular fa-heart"></i> Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="team.html"><i class="fa-solid fa-people-group"></i> Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="BlogNav" class="nav-link" href="blog.html"><i class="fa-solid fa-book"></i> Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="text-center">
+        <h1 class="title">Contact Us</h1>
+
+        <div class="row justify-content-lg-center g-3">
+            <form id="ContactForm" class="col-lg-6 col-md-10 col-sm-10">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Full Name</span>
+                    <input id="fullName" name="fullName" type="text" class="form-control"
+                           aria-describedby="Full Name" aria-label="Full Name Input" required>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Email Address</span>
+                    <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+                           aria-describedby="Email Address" aria-label="Email Address Input" required>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Subject</span>
+                    <input id="subject" name="subject" type="tel" class="form-control"
+                           aria-describedby="Subject" aria-label="Subject Input">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Your Message</span>
+                    <input id="message" name="message" class="form-control"
+                           aria-describedby="Message Area" aria-label="Message Area Input">
+                </div>
+
+                <button id="sendButton" type="submit" class="btn btn-primary">
+                    <i class="fa-solid fa-envelope"></i>
+                    Submit
+                </button>
+
+                <button id="cancelButton" type="reset" class="btn btn-warning">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Cancel
+                </button>
+
+            </form>
+        </div>
+
+        <div>
+            <h2>Email:</h2>
+            <p>
+                For general inquiries, please contact us at:
+                <a href="https://www.youtube.com/watch?v=nEFcbKF4WfY">scam@harmonyhub.ca</a>
+            </p>
+        </div>
+
+        <div>
+            <h2>Phone:</h2>
+            <p>
+                If you need immediate assistance, you can reach us at:
+                <a href="#">+1 (234) 567-890</a>
+            </p>
+        </div>
+
+        <div>
+            <h2>Physical Address:</h2>
+            <p>
+                Our office is located at:
+                3303 Meadow Drive, Oklahoma City, OK, 73135
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="Contact" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalTitle">
+                        Thank you for submitting the form! You will be redirected in 5 seconds.
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <p id="modalFullName"></p><br>
+                    <p id="modalEmailAddress"></p><br>
+                    <p id="modalSubject"></p><br>
+                    <p id="modalMessage"></p><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div class="modal fade" id="ContactErrorModal" tabindex="-1" role="dialog" aria-labelledby="Contact" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactErrorModalTitle">
+                        Error!
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        You left something blank. Please fill in everything. To close this message click anywhere
+                        outside the box.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="navbar fixed-bottom bg-body-tertiary">
+            <div class="container-fluid" id="footer">
+                <a class="nav-link" href="./privacypolicy.html">Privacy Policy</a>
+                <a class="nav-link" href="./tos.html">Terms of Service</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
+            </div>
+        </nav>
+    </footer>
+
+<!-- Scripting Section -->
+<script src="scripts/app.js"></script>
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
