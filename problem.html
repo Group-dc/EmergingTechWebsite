@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Manu Sugunakumar">
+    <meta name="author" content="Noelle Dacayo & Manu Sugunakumar">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Career</title>
+
+    <title>problem</title>
+
     <!-- CSS Section -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
@@ -16,38 +18,41 @@
 </head>
 <body>
 
-<div id="page-container">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><i class="fa-solid fa-people-roof"></i> Harmony Hub</a>
+                <a class="navbar-brand" href="./index.html"><i class="fa-solid fa-people-roof"></i> INFT3103 - Cybersecurity</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul id="NavBar" class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                            <a class="nav-link" href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html"><i class="fa-solid fa-scroll"></i> Portfolio</a>
+                            <a class="nav-link active" aria-current="page" href="./problem.html"><i class="fa-solid fa-scroll"></i> Problem Overview</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="service.html"><i class="fa-regular fa-heart"></i> Services</a>
+                            <a class="nav-link" href="./service.html"><i class="fa-regular fa-heart"></i> Next Steps</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="team.html"><i class="fa-solid fa-people-group"></i> Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="BlogNav" class="nav-link" href="blog.html"><i class="fa-solid fa-book"></i> Blog</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Main content -->
-    <main class="text-center">
-        <h1 class="title">Careers</h1>
+    <div class="text-center">
+        <h1 class="title">Problem Overview</h1>
+        <button id="LoadMoreBtn" class="btn btn-outline-info">Load More</button>
+    </div>
+
+    <main>
+
     </main>
+
+
 
     <footer>
         <nav class="navbar fixed-bottom bg-body-tertiary">
@@ -58,13 +63,11 @@
             </div>
         </nav>
     </footer>
-</div>
 
-    <!-- Scripting Section -->
-    <script src="scripts/app.js"></script>
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+<!-- Scripting Section -->
+<script src="scripts/app.js"></script>
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
