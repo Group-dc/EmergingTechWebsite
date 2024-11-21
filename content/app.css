@@ -72,7 +72,8 @@ body {
     text-shadow: black;
     font-family: monospace;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 
@@ -80,8 +81,6 @@ body {
 .navbar.fixed-bottom {
     display: flex;
     text-align: center;
-    /* padding: 20px 0; */
-    /* position: relative !important; */
     bottom: 0;
     width: 100%;
     background-color: #fffdfd;
@@ -100,6 +99,7 @@ body {
     align-content: center;
     justify-content: center;
     border: inset;
+    width: 80%;
 }
 
 .container {
@@ -112,6 +112,22 @@ body {
     padding: 20px;
     max-width: 70%;
     width: 60%;
+    margin: 1em;
+    border: inset;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+.action-container {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0) !important;
+    background-color: rgb(251, 200, 192) !important;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 70%;
+    width: 45%;
     margin: 1em;
     border: inset;
     justify-content: center;
@@ -193,4 +209,8 @@ body {
     text-align: center;
     font-size: 2em;
     font-family: monospace;
+}
+
+.accordion {
+    width: 100%;
 }
