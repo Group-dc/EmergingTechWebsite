@@ -27,6 +27,7 @@ body {
     left: 0;
     z-index: -1;
 }
+
 /* Styles for the main paragraph container */
 .main-paragraph-container {
     position: fixed;
@@ -37,63 +38,157 @@ body {
     padding: 20px;
     max-width: 600px;
     text-align: left;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Optional: Add a shadow effect */
 }
 
 .main-paragraph-container p {
-    margin: 0; /* Remove default margin from the paragraph */
+    margin: 0;
+    /* Remove default margin from the paragraph */
 }
+
 /* Styles for the centered heading */
 .centered-heading {
     position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     z-index: 1;
-    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 53px;
-    color: #fceea4;
+    color: #914034;
     font-weight: bold;
     font-family: 'Book Antiqua', serif;
+    text-align: center;
+    width: 70%;
 }
+
+
 /* Title for the other pages*/
-.title{
+.title {
     font-size: 53px;
     color: #ba7966;
     font-weight: bold;
     text-shadow: black;
     font-family: 'Book Antiqua', serif;
     text-align: center;
+    margin-bottom: 2em;
 }
+
 /* Title for the other pages*/
-.blog-title{
+.blog-title {
     font-size: 25px;
     color: #ba7966;
     font-weight: bold;
     font-family: 'Book Antiqua', serif;
     text-align: center;
 }
-.ProjImg{
+
+.ProjImg {
     width: 20%;
     height: auto;
     margin: 0 auto;
 }
 
-.portfolioDiv{
+.portfolioDiv {
     text-align: center;
 }
 
 /* Styles for the second navbar */
 .navbar.fixed-bottom {
+    display: flex;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     z-index: 1000;
+    background-color: #fffdfd;
+    color:#fae7dc !important;
+    height: 2em;
 }
 
 /* Footer css stuff */
-#footer a{
+#footer a {
     text-align: right;
 }
 
+.main-container {
+    display: flex;
+    background-color: rgba(194, 141, 108, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin: 5em auto;
+    padding: 30px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border: inset;
+}
+
 .container {
-    padding-bottom: 40px; /* Adjust the value based on the navbar height */
+    display: flex;
+    background-color: rgba(194, 141, 108, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 70%;
+    width: 50%;
+    margin: 5em;
+    border: inset;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    color: rgb(0, 0, 0, 0.8) !important;
+    background-color: rgb(251, 200, 192) !important;
+    border-radius: 20px;
+    margin: 1em;
+}
+
+.card-title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.card_image {
+    height: 20rem;
+    width: 100%;
+    border-radius: 10px;
+}
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-body{
+    padding: 10px !important;
+}
+.modal-content{
+    color: rgb(0, 0, 0) !important;
+    background-color: rgb(251, 200, 192) !important;
+    border-radius: 20px;
+}
+.modal-content img {
+    width: 96% !important;
+}
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 2rem;
+    color: rgb(251, 200, 192) !important;
+    font-family: monospace;
 }

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Noelle Dacayo & Manu Sugunakumar">
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>problem</title>
@@ -16,27 +17,33 @@
     <link rel="stylesheet" href="content/app.css">
 
 </head>
+
 <body>
 
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><i class="fa-solid fa-people-roof"></i> INFT3103 - Cybersecurity</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand" href="index.html"><i class="fa-solid fa-people-roof"></i> INFT3103 -
+                    Cybersecurity</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul id="NavBar" class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>
+                                Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./problem.html"><i class="fa-solid fa-scroll"></i> Problem Overview</a>
+                            <a class="nav-link active" href="problem.html"><i class="fa-solid fa-location-pin-lock"></i>
+                                Key Issues</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./service.html"><i class="fa-regular fa-heart"></i> Next Steps</a>
+                            <a class="nav-link" href="action.html"><i class="fa-solid fa-shield-halved"></i> Action
+                                Plan</a>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><i class="fa-solid fa-address-book"></i> Contact
+                                Us</a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -44,30 +51,183 @@
     </header>
 
     <div class="text-center">
-        <h1 class="title">Problem Overview</h1>
-        <button id="LoadMoreBtn" class="btn btn-outline-info">Load More</button>
+        <h1 class="title">Key Issues</h1>
     </div>
 
     <main>
+        <!-- Card -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Unchecked Use of Data Extraction Tools</h5>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#card1"> View More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Inconsistent Implementation of Cybersecurity Protocols</h5>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#card2"> View More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Lack of Accountability and Long-term Planning</h5>
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#card3"> View More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <!-- Card1 -->
+            <div class="modal fade" id="card1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Unchecked Use of Data Extraction Tools
+                            </h5> <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                • The problem exists within the infrastructure and systems used by various federal
+                                departments and agencies in Canada. Personal data is being extracted using data
+                                extraction tools, capable of recovering and analyzing data from electronic devices.
+                                These data could include:
+                            <ul>
+                                <li>Text messages</li>
+                                <li>Contacts</li>
+                                <li>Photos</li>
+                                <li>Travel history</li>
+                                <li>Internet search history</li>
+                                <li>Deleted content</li>
+                                <li>Social media activity</li>
+                            </ul>
+                            • Federal departments have only said they use these tools after they’ve obtained a judicial
+                            authorization, such as a search warrant. Some departments have said that these data are used
+                            for investigations such as workplace harassment. However, other departments claim they
+                            collect personal data “for security reasons”. People are concerned about the transparency
+                            and accountability of what data is being accessed and how these departments manage them (<a
+                                href="https://www.cbc.ca/news/canada/ottawa/federal-canada-government-department-privacy-1.7044159"
+                                target="_blank">CBC News, 2023</a>).
+                            </p>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="button"
+                                data-bs-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card2 -->
+            <div class="modal fade" id="card2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Unchecked Use of Data Extraction Tools
+                            </h5> <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Audits and reports, including those from the Auditor General, reveal significant
+                                inconsistencies in how cybersecurity measures are applied across Canadian federal
+                                departments. While security protocols exist, their implementation often varies due to
+                                differing interpretations of requirements, outdated systems, and a lack of cohesive
+                                policies. Some departments fail to adopt robust encryption, real-time monitoring, or
+                                consistent compliance practices, leaving systems vulnerable to exploitation.
+                                Additionally, legacy software and infrastructure exacerbate these risks, as they are
+                                often ill-equipped to handle modern cyber threats (<a
+                                    href="https://www.cbc.ca/news/canada/ottawa/federal-canada-government-department-privacy-1.7044159"
+                                    target="_blank">Government of Canada, 2020</a>).<br><br>
+
+                                These inconsistencies create critical vulnerabilities, allowing malicious actors to
+                                exploit weak links in the government’s defense. This fragmentation increases the
+                                likelihood of cyberattacks, leading to the loss of sensitive citizen data, disruption of
+                                essential government services, and harm to national security. Addressing this issue
+                                requires standardized policies, regular audits, and modernization of IT infrastructure
+                                to build a unified and resilient cybersecurity framework capable of protecting Canada’s
+                                digital assets (<a
+                                    href="https://www.cbc.ca/news/canada/ottawa/federal-canada-government-department-privacy-1.7044159">Williams,
+                                    2023</a>).
+                            </p>
+
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="button"
+                                data-bs-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="card3" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Unchecked Use of Data Extraction Tools
+                            </h5> <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                The Canadian government struggles with defining clear roles and responsibilities for
+                                cybersecurity, which creates a fragmented approach to managing risks. Many departments
+                                do not assign specific accountability for cybersecurity, which hinders effective
+                                governance and oversight. Additionally, a lack of long-term funding strategies results
+                                in insufficient resources for modernizing infrastructure, adopting secure cloud
+                                solutions, and addressing evolving cyber threats.<br><br>
+
+                                The absence of consistent leadership and funding limits the government's ability to
+                                proactively address cybersecurity challenges. Without clear accountability, cyber
+                                incidents are not managed efficiently, and departments may fail to detect
+                                vulnerabilities in time. Moreover, the lack of a comprehensive, sustainable funding
+                                approach means cybersecurity initiatives are often reactive, which increases the risk of
+                                data breaches and compromises citizens' privacy (<a
+                                href="https://www.oag-bvg.gc.ca/internet/English/parl_oag_202211_07_e_44153.html">Office of the Auditor General of Canada, 2022</a>).
+                            </p>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="button"
+                                data-bs-dismiss="modal">Close</button> </div>
+                    </div>
+                </div>
+            </div>
 
     </main>
 
 
 
-    <footer>
-        <nav class="navbar fixed-bottom bg-body-tertiary">
-            <div class="container-fluid" id="footer">
-                <a class="nav-link" href="./privacypolicy.html">Privacy Policy</a>
-                <a class="nav-link" href="./tos.html">Terms of Service</a>
-                <a class="nav-link" href="./contact.html">Contact</a>
+    <footer class="mt-4">
+        <nav class="navbar fixed-bottom navbar-expand-md">
+            <div class="container-fluid justify-content-between">
+                <div class="d-flex">
+                    <ul id="NavBar" class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <a class="nav-link" href="./privacypolicy.html">Privacy Policy</a>
+                        <a class="nav-link" href="./tos.html">Terms of Service</a>
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </ul>
+                </div>
+                <div class="d-flex">
+                    <ul id="NavBar" class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <a class="nav-link" href="https://twitter.com" target="_blank"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                        <a class="nav-link" href="https://facebook.com" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a class="nav-link" href="https://instagram.com" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </ul>
+                </div>
             </div>
         </nav>
     </footer>
 
-<!-- Scripting Section -->
-<script src="scripts/app.js"></script>
-<script src="./node_modules/jquery/dist/jquery.js"></script>
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripting Section -->
+    <script src="scripts/app.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
