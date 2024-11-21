@@ -51,71 +51,63 @@
     </header>
 
     <div class="text-center">
-        <h1 class="title">Contact Us</h1>
+        <h1 class="title">Get in Touch</h1>
 
-        <div class="row justify-content-lg-center g-3">
-            <form id="ContactForm" class="col-lg-6 col-md-10 col-sm-10">
-
+        <div class="row justify-content-center">
+            <form id="ContactForm" class="container">
+                <div class="contact-header">
+                    <p>Write Us</p>
+                </div>
+                
                 <div class="input-group mb-3">
                     <span class="input-group-text">Full Name</span>
                     <input id="fullName" name="fullName" type="text" class="form-control" aria-describedby="Full Name"
                         aria-label="Full Name Input" required>
                 </div>
-
                 <div class="input-group mb-3">
                     <span class="input-group-text">Email Address</span>
                     <input id="emailAddress" name="emailAddress" type="email" class="form-control"
                         aria-describedby="Email Address" aria-label="Email Address Input" required>
                 </div>
-
                 <div class="input-group mb-3">
                     <span class="input-group-text">Subject</span>
                     <input id="subject" name="subject" type="tel" class="form-control" aria-describedby="Subject"
                         aria-label="Subject Input">
                 </div>
-
                 <div class="input-group mb-3">
                     <span class="input-group-text">Your Message</span>
-                    <input id="message" name="message" class="form-control" aria-describedby="Message Area"
-                        aria-label="Message Area Input">
+                    <textarea id="message" name="message" class="form-control" rows="10"
+                              aria-describedby="Message Area" aria-label="Message Area Input"></textarea>
                 </div>
-
-                <button id="sendButton" type="submit" class="btn btn-primary">
-                    <i class="fa-solid fa-envelope"></i>
-                    Submit
-                </button>
-
-                <button id="cancelButton" type="reset" class="btn btn-warning">
-                    <i class="fa-solid fa-rotate-left"></i>
-                    Cancel
-                </button>
-
+                
+                <div>
+                    <button id="sendButton" type="submit" class="btn btn-primary">
+                        <i class="fa-solid fa-envelope"></i>
+                        Submit
+                    </button>
+                    <button id="cancelButton" type="reset" class="btn btn-warning">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Cancel
+                    </button>
+                </div>
             </form>
+            <div class="contact-container">
+                <div>
+                    <div class="contact-header">
+                        <p>Contact Us</p>
+                    </div>
+                    <div>
+                        <img src="/pictures/map.jpg" alt="Map Location" class="img-fluid">
+                    </div>
+                    <p> <br><strong><i class="fa-regular fa-envelope"></i> Email: </strong> <a href="https://www.youtube.com/watch?v=nEFcbKF4WfY"> dccares@durhamcollege.ca</a><br>
+                        <strong><i class="fa-solid fa-phone"></i> Phone: </strong> <a href="#">+1 (905) 721-2000</a><br>
+                        <strong><i class="fa-solid fa-map-location-dot"></i> Physical Address: </strong>2000 Simcoe St N, Oshawa, ON L1G 0C5
+                    </p>
+                </div>
+            </div>
         </div>
+</div>
 
-        <div>
-            <h2>Email:</h2>
-            <p>
-                For general inquiries, please contact us at:
-                <a href="https://www.youtube.com/watch?v=nEFcbKF4WfY">scam@harmonyhub.ca</a>
-            </p>
-        </div>
-
-        <div>
-            <h2>Phone:</h2>
-            <p>
-                If you need immediate assistance, you can reach us at:
-                <a href="#">+1 (234) 567-890</a>
-            </p>
-        </div>
-
-        <div>
-            <h2>Physical Address:</h2>
-            <p>
-                Our office is located at:
-                3303 Meadow Drive, Oklahoma City, OK, 73135
-            </p>
-        </div>
     </div>
 
     <!-- Modal -->

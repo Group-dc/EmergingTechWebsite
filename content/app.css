@@ -50,7 +50,7 @@ body {
 /* Styles for the centered heading */
 .centered-heading {
     position: fixed;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     z-index: 1;
     top: 50%;
     left: 50%;
@@ -58,7 +58,7 @@ body {
     font-size: 53px;
     color: #914034;
     font-weight: bold;
-    font-family: 'Book Antiqua', serif;
+    font-family: monospace;
     text-align: center;
     width: 70%;
 }
@@ -67,32 +67,14 @@ body {
 /* Title for the other pages*/
 .title {
     font-size: 53px;
-    color: #ba7966;
+    color: #914034;
     font-weight: bold;
     text-shadow: black;
-    font-family: 'Book Antiqua', serif;
+    font-family: monospace;
     text-align: center;
     margin-bottom: 2em;
 }
 
-/* Title for the other pages*/
-.blog-title {
-    font-size: 25px;
-    color: #ba7966;
-    font-weight: bold;
-    font-family: 'Book Antiqua', serif;
-    text-align: center;
-}
-
-.ProjImg {
-    width: 20%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.portfolioDiv {
-    text-align: center;
-}
 
 /* Styles for the second navbar */
 .navbar.fixed-bottom {
@@ -115,7 +97,8 @@ body {
 
 .main-container {
     display: flex;
-    background-color: rgba(194, 141, 108, 0.5);
+    color: rgb(0, 0, 0) !important;
+    background-color: rgb(251, 200, 192) !important;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     margin: 5em auto;
@@ -128,16 +111,36 @@ body {
 
 .container {
     display: flex;
-    background-color: rgba(194, 141, 108, 0.5);
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0) !important;
+    background-color: rgb(251, 200, 192) !important;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 70%;
+    width: 60%;
+    margin: 1em;
+    border: inset;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0) !important;
+    background-color: rgb(251, 200, 192) !important;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     padding: 20px;
     max-width: 70%;
-    width: 50%;
-    margin: 5em;
+    width: 35%;
+    margin: 1em;
     border: inset;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    text-align: justify;
 }
 
 .card {
@@ -190,5 +193,11 @@ body {
     padding: 10px;
     margin-top: 2rem;
     color: rgb(251, 200, 192) !important;
+    font-family: monospace;
+}
+
+.contact-header {
+    text-align: center;
+    font-size: 2em;
     font-family: monospace;
 }
