@@ -80,19 +80,12 @@ body {
 .navbar.fixed-bottom {
     display: flex;
     text-align: center;
-    padding: 20px 0;
-    position: fixed;
+    /* padding: 20px 0; */
+    /* position: relative !important; */
     bottom: 0;
     width: 100%;
-    z-index: 1000;
     background-color: #fffdfd;
-    color:#fae7dc !important;
     height: 2em;
-}
-
-/* Footer css stuff */
-#footer a {
-    text-align: right;
 }
 
 .main-container {
