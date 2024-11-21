@@ -215,6 +215,7 @@ body {
     text-align: center;
     font-size: 2em;
     font-family: monospace;
+    font-weight: 600;
 }
 
 .accordion {
